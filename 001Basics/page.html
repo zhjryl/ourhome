@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <title>四季</title>
     <link rel="Stylesheet" type="text/css" href="css/page.css" />
+    <script>
+        function audioAutoPlay(id){
+            var audio = document.getElementById(id);
+            audio.play();
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                audio.play();
+            }, false);
+            document.addEventListener('YixinJSBridgeReady', function() {
+                audio.play();
+            }, false);
+        }
+    </script>
 </head>
+<body onload=audioAutoPlay('bgm') style=overflow:-Scroll;overflow-y:hidden>
+<audio id="bgm" src="mp3/1.mp3" preload="auto" autoplay="autoplay"></audio>
 
-<body style="overflow:-Scroll;overflow-y:hidden" >
+
 
 <page id="c">春</page>
 <page id="x">夏</page>
