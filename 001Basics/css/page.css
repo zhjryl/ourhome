@@ -11,26 +11,24 @@ page{
 }
 #c{
     background-color: lightgreen;
-    animation: c 10s infinite;
+    animation: c 10s ;
 }
 #x{
     background-color: darkgreen;
-    animation: x 10s infinite;
+    animation: x 10s ;
 }
 #q{
-    background-image: url("../images/IMG_20160923_204930.jpg");
-    background-size: 100%;
-    animation: q 10s infinite;
+    background-color: coral;
+    animation: q 10s ;
 }
 #d{
-    background-color: black;
-    color: white;
-    animation: d 10s infinite;
+    background-color: aliceblue;
+    animation: d 10s ;
 }
 #z{
     font-size: 36px;
     display: block;
-    animation: z 10s infinite;
+    animation: z 10s ;
 }
 
 @keyframes z {
