@@ -2,13 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>You and Me</title>
+    <title>YOU and ME</title>
     <style type="text/css">
         @font-face {
             font-family: digit;
-        src: url('digital-7_mono.ttf')  format("truetype");
+            src: url("digital-7_mono.ttf") format("truetype");
         }
+        #head{
+            position:absolute; left:80px;	top:40px; font-family:Microsoft YaHei;font-style:italic; color: deeppink; font-size:35px;font-weight:900;text-shadow: 2px 3px 3px #000;        animation: yourzero 10s ;
+        }
+        @keyframes yourzero{
+            0%  {opacity: 0; }
+            35% {opacity: 100; }
+            100% {opacity: 100; }
+        }
+
+        @keyframes yourfirst{
+            0%  {opacity: 0; }
+            65% {opacity: 0; }
+            75% {opacity: 100;}
+            100% {opacity: 100; }
+        }
+        @keyframes yoursecond{
+            0%  {opacity: 0; }
+            80% {opacity: 0;}
+            90% {opacity: 100; }
+            100% {opacity: 1000;}
+        }
+        @keyframes yourthird{
+            0%  {opacity: 0;}
+            80% {opacity: 0; }
+            95% {opacity: 0; }
+            100% {opacity: 100; }
+        }
+        #s{
+            position:absolute;
+            left:400px;	top:125px;
+            animation: yourfirst 25s;
+        }
+        #t{
+            position:absolute;
+            left:450px;	top:175px;
+            animation: yoursecond 25s;
+        }
+        #k{
+            position:absolute;
+            left:500px;	top:225px;
+            animation: yourthird 25s;
+        }
+
     </style>
+
 
     <link rel="Stylesheet" type="text/css" href="css/page.css" />
 
@@ -32,38 +76,52 @@
                 audio.play();
             }, false);
         }
+
+
     </script>
 </head>
 
 <body onload="audioAutoPlay('bgm')">
 <audio id="bgm" src="mp3/4.mp3" preload="auto" autoplay="autoplay" loop></audio>
 
+<pio id="head">My dear , Happy Valentine's Day ~</pio>
+
+    <img id="s" src="images/1.jpg" width="65" height="75" />
+    <img id="t" src="images/2.jpg" width="65" height="75" />
+    <img id="k" src="images/3.jpg" width="65" height="75" />
+
 <div id="mainDiv">
     <div id="content">
         <div id="code">
             <span class="comments">/**</span><br />
             <span class="space"> <span class="comments">*2017-12-25,</span><br />
-            <span class="space"> <span class="comments">*2018-2-14.</span><br />
+                <span class="space"> <span class="comments">*2018-2-14.</span><br />
             <span class="space"> <span class="comments">*/</span><br />
             Boy name = <span class="keyword">Mr</span> ZENG<br />
             Girl name = <span class="keyword">Mrs</span> REN<br />
-            <span class="comments">// Fall in love river. </span><br />
+            <span class="comments">// Fall in love.</span><br />
             The boy love the girl;<br />
             <span class="comments">// They love each other.</span><br />
             The girl loved the boy;<br />
             <span class="comments">// AS time goes on.</span><br />
-            The boy can not be separated the girl;<br />
-            <span class="comments">// At the same time.</span><br />
-            The girl can not be separated the boy;<br />
-            <span class="comments">// Both wind and snow all over the sky.</span><br />
-            <span class="comments">// Whether on foot or 5 kilometers.</span><br />
-            <span class="keyword">The boy</span> very <span class="keyword">happy</span> ; <br />
+            They can't seperate from each other.<br />
+            The boy said to the girl: I found a love for me;<br />
+            <span class="comments">// A girl,beautiful and sweet.</span><br />
+            <span class="comments">// The boy has never known there was someone waiting for him.</span><br />
+                <span class="comments">// He will not give her up this time.</span><br />
+            <span class="keyword">And the boy</span> very <span class="keyword">happy</span> ; <br />
             <span class="keyword">The girl</span> is also very <span class="keyword">happy</span> ; <br />
-            <span class="placeholder"> <span class="comments"> // Whether it is right now</span><br />
-            <span class="placeholder"><span class="comments">// Still in the distant future.</span><br />
-            <span class="placeholder">The boy has but one dream;<br />
-            <span class="comments">// The boy wants the girl could well have been happy.</span><br />
+            <span class="placeholder"> <span class="comments"> // The girl,</span><br />
+            <span class="placeholder"><span class="comments">// dancing in the dark between the boy's arms.</span><br />
+            <span class="placeholder">They share dreams and fight against all odds;<br />
+            <span class="comments">// God knows they will be alright all the time.</span><br />
             <br>
+            <br>
+                <span class="space"/><span class="comments">
+                    <span class="keyword">亲爱的玲</span>  情人节快乐！~ 身处异地没有能够在你身边陪你度过这特别的一天，好想你呀~ 嘿嘿， 亲亲~ 所以就做个小礼物送给你啦啦啦啦~<br />
+                    <span class="space">回想起我们在一起时发生的事，嘴角不禁扬起一丝欣慰的笑：两个人在一起，离不开共同的努力，但大起大落之后的我们依然像狂风暴雨之后的船能寻找到岸一样紧紧相吸，互相关爱，一起进步，这也许就是缘分和羁绊吧，一种无形的力量将我们紧紧地栓牢。或喜或悲，或痛或乐，都有一个忠实的我在身边陪着你！另外感谢亲爱的这么多时间来的理解和包容，我也要慢慢成长成为一个 <span class="keyword">好！</span><span class="keyword">男！</span><span class="keyword">人！</span></span>
+                </span><br />
+                <br>
             <br>
             I want to say:<br />
             Baby, I love you forever;<br />
@@ -72,22 +130,21 @@
             <canvas id="garden"></canvas>
             <div id="words">
                 <div id="messages">
-                    亲爱的，这是我们相爱在一起的时光。
+                    亲爱的  MU a!~ 我们已经在一起这么些天啦:
                     <div id="elapseClock"></div>
                 </div>
                 <div id="loveu">
                     爱你直到永永远远。<br/>
-                    <div class="signature">- 爱你的 &Z</div>
+                    <div class="signature">-- 爱你的 &Z</div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="copyright">
-        <a href="#">....</a><br />
-        <a href="#">....</a><br />
-
-    </div>
 </div>
+
+
+
+
 
 
 <script type="text/javascript">
@@ -110,17 +167,25 @@
         $("#copyright").css("bottom", "10px");
         document.execCommand("stop");
     } else {
+
+
         setTimeout(function () {
             startHeartAnimation();
-        }, 5000);
+        }, 30000);  /*方法用于在指定的毫秒数后调用函数或计算表达式。*/
+
 
         timeElapse(together);
+
         setInterval(function () {
             timeElapse(together);
-        }, 500);
+        }, 500);  /*方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。方法会不停地调用函数*/
 
         adjustCodePosition();
+
         $("#code").typewriter();
+
+
+
     }
 </script>
 
